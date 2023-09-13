@@ -1,0 +1,121 @@
+.body {
+    margin: auto;
+    width: fit-content;
+}
+
+.editor {
+    display: inline-flex;
+    gap: 10px;
+    font-family: monospace;
+    line-height: 21px;
+    background: #282a3a;
+    border-radius: 2px;
+    padding: 10px 0px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.line-numbers {
+    width: 20px;
+    text-align: right;
+    height: 9999px;
+}
+
+.line-numbers span {
+    counter-increment: linenumber;
+}
+
+.line-numbers span::before {
+    content: counter(linenumber);
+    display: block;
+    color: #506882;
+}
+
+textarea {
+    height: 9999px;
+    line-height: 21px;
+    overflow-y: hidden;
+    padding: 0;
+    border: 0;
+    background: #282a3a;
+    color: #FFF;
+    min-width: 128ch;
+    outline: none;
+    resize: none;
+    white-space: nowrap;
+}
+
+button{
+    margin-top: 0.5em;
+    margin-right: 2ch;
+    float: right;
+}
+
+.signature button{
+    float:left
+}
+.signature input {
+    float:left;
+    margin-top: 0.5em;
+    margin-right: 2ch;
+    width: 32ch;
+
+    font-family: monospace;
+    line-height: 21px;
+    background: #282a3a;
+    color:#FFF;
+    border:none;
+    border-radius: 2px;
+    padding: 2px 1ch 0px;
+}
+
+.signature {
+    clear: left; /* Clear the float property to ensure proper spacing */
+}
+
+.image {
+    margin: 4em auto 0; /* Add margin to create space between the signature and the image */
+    text-align: center;
+    width:fit-content;
+    display:grid;
+}
+
+.image img {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    width: 200px; /* Ensure the image doesn't exceed the container width */
+    height: 100px; /* Maintain the image's aspect ratio */
+}
+.image button {
+    grid-column: 2;
+    margin: 2px 1ch 0px;
+}
+
+.colors {
+    margin: 1em auto 0 auto; /* Add margin to create space between the signature and the image */
+    text-align: center;
+    width:fit-content;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row: auto auto;
+    gap: 0.25em;
+}
+
+.color-btns {
+    margin:0.25em auto 0 !important;
+}
+
+.colors button {
+    margin: auto 0 auto 0.1ch;
+}
+
+.colors input[type="number"] {
+    width: 5ch;
+}
+
+.colors #text-color-default{
+    margin:auto;
+}
+.colors #text-color-save{
+    margin:auto;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pope Innocent III's Daily Affirmations</title>
+    <script src="popup.js"></script>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        body {
+            margin: 4px 0 0 0;
+            padding: 0;
+            height: 12.5em;
+            background-color: #000000;
+            user-select: none;
+        }
+
+        img {
+            width: 25em;
+            height: 12.5em;
+            z-index: -1;
+            /* height: 100px; */
+        }
+
+
+        #quotebox {
+            top: 1.5em;
+            left: 7.5em;
+            width: 16.5em;
+            height: 8em;
+        }
+        #quote {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width:100%;
+            font-size: 1.2em;
+        }
+        #signature {
+            position: absolute;
+            top:6.5rem;
+            left:1.2rem;
+            width: 14rem;
+            height: 2rem;
+            font-size: 1.2em;
+        }
+        .textbox {
+            /* background-color: #ff00ff44; */
+            position: absolute;
+        }
+
+        p {
+            color: #f2e1d4;
+            text-align: center;
+
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="images/innocentIII.png"></img>
+    <div class="textbox" id="quotebox">
+        <p id="quote">You commit shameful acts by which you defile your name, your person, and your conscience.</p>
+        <p id="signature">&ndash; Pope Innocent III</p>
+    </div>
+</body>
+
+</html>

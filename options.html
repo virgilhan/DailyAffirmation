@@ -1,0 +1,64 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Extension Options</title>
+  <script src="options.js"></script>
+  <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+  <div class="body">
+    <h1>Affirmation Extension</h1>
+    <p>This is a test. (it worked)</p>
+
+    <div class="quotes">
+      <div id="quote-editor">
+        <div class="editor">
+          <div class="line-numbers">
+            <span></span>
+          </div>
+          <textarea id="quote-textarea"></textarea>
+          <script src="options-editor.js"></script>
+        </div>
+        <div>
+          <button id="save-quotes-btn">Save Quotes</button>
+          <button id="upload-quotes-btn">Upload text file</button>
+          <button id="default-quotes-btn">Load Default</button>
+          <button id="clear-quotes-btn">Clear Quotes</button>
+        </div>
+      </div>
+    </div>
+    <div class="signature">
+      <input type="text" id="signature-input">
+      <button id="save-sign-btn">Save Signature</button>
+    </div>
+
+  </div>
+  <div class="image">
+    <img id="bg-image" src="images/innocentIII.png"></img>
+    <button id="default-image-btn">Load Default</button>
+    <button id="upload-image-btn">Load Image</button>
+    <button id="save-image-btn">Save Image</button>
+  </div>
+  <div class="colors">
+    <input id="text-color" type="color">
+    <input id="text-color-R" type="number" min="0" max="255" placeholder="R">
+    <input id="text-color-G" type="number" min="0" max="255" placeholder="G">
+    <input id="text-color-B" type="number" min="0" max="255" placeholder="B">
+    <input id="text-color-A" type="number" min="0" max="255" placeholder="A">
+
+    <input id="text-highlight" type="color">
+    <input id="text-highlight-R" type="number" min="0" max="255" placeholder="R">
+    <input id="text-highlight-G" type="number" min="0" max="255" placeholder="G">
+    <input id="text-highlight-B" type="number" min="0" max="255" placeholder="B">
+    <input id="text-highlight-A" type="number" min="0" max="255" placeholder="A">
+  </div>
+  <div class="colors color-btns">
+    <button id="text-color-default">Load Default</button>
+    <button id="text-color-save">Save Colors</button>
+  </div>
+</body>
+
+</html>
