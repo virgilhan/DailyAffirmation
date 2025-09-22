@@ -161,7 +161,7 @@ function loadDefaultQuotes() {
     })
     .catch((e) => console.error(e));
 
-  document.getElementById('signature-input').value = 'Pope Innocent III';
+  document.getElementById('signature-input').value = 'Desiderius Erasmus';
 }
 
 function saveQuotes() {

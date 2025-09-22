@@ -121,7 +121,7 @@ function getData(callback){
     chrome.storage.local.get(['quotes','signature','image','colors'], function (items) {
         console.log('Settings retrieved', items);
         if (!items.signature){
-            items.signature = 'Pope Innocent III';
+            items.signature = 'Desiderius Erasmus';
         }
         if(!items.colors){
             items.colors = {color:-220080897,highlight:0}
