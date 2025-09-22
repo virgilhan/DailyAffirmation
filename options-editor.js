@@ -180,7 +180,7 @@ function saveSignature() {
 
 
 function loadDefaultImage() {
-  document.getElementById('bg-image').src = "images/innocentIII.png";
+  document.getElementById('bg-image').src = "images/Erasmus.png";
 }
 
 function uploadImageFile() {
